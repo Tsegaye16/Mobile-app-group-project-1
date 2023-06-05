@@ -193,7 +193,7 @@ class _UserRegistrationState extends State<UserRegistration> {
     );
   }
 }
-
+// this is additional functionals other than expectation
 class ConfirmationScreen extends StatelessWidget {
   final String firstName;
   final String lastName;
