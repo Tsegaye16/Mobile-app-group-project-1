@@ -1,3 +1,5 @@
+
+//This is our main.dart
 import 'package:flutter/material.dart';
 import 'screens/User_registration_screen.dart';
 
