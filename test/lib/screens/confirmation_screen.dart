@@ -15,6 +15,10 @@ class ConfirmationScreen extends StatelessWidget {
     required this.retypePassword,
   });
 
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
