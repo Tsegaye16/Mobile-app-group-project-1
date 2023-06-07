@@ -54,9 +54,23 @@ class ConfirmationScreen extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                //####################
-                //Please implement on pressed button
-                //#################################
+                ScaffoldMessenger.of(context)
+                    .showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          'User is created successfully',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        backgroundColor: Colors.green,
+                        duration: Duration(seconds: 2),
+                      ),
+                    )
+                    .closed
+                    .then((reason) {
+                  if (reason == SnackBarClosedReason.timeout) {
+                    Navigator.pop(context);
+                  }
+                });
 
               },
               child: Text('Confirm'),
