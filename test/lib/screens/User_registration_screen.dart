@@ -36,11 +36,7 @@ class _UserRegistrationState extends State<UserRegistration> {
       print('Retype Password: $retypePassword');
 
       // Clear the form fields
-      firstNameController.clear();
-      lastNameController.clear();
-      emailController.clear();
-      passwordController.clear();
-      retypePasswordController.clear();
+     //please implement clear form when return from confirmation screen
 
       // Navigate to the confirmation screen
       Navigator.push(
