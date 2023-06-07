@@ -37,7 +37,11 @@ class _UserRegistrationState extends State<UserRegistration> {
 
       // Clear the form fields
      //please implement clear form when return from confirmation screen
-
+      firstNameController.clear();
+      lastNameController.clear();
+      emailController.clear();
+      passwordController.clear();
+      retypePasswordController.clear();
       // Navigate to the confirmation screen
       Navigator.push(
         context,
